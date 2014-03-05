@@ -1,0 +1,61 @@
+WooCommerce Cardsave Re-Directed Payment Module
+Copyright (C) 2011 All rights reserved.
+Support: ecomm@cardsave.net
+
+------------------------
+
+Last Updated: 12/10/2011
+
+------------------------
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+Disclaimer: This code is provided on an "as is" basis. It is the responsibility of the merchant/merchants web developer to test its implementation and function.
+
+Installation Instructions for Re-Directed Payments
+==================================================
+This module is for WooCommerce Version 1.x only. It will NOT work with earlier versions of WooCommerce.
+
+If you find the module works in other versions of WooCommerce, please contact us on the address at the top of this file to let us know.
+
+Installation Instructions for Re-Directed Payments
+==================================================
+Step 1. Pre-Installation
+------------------------
+If you have not already done so, install WordPress, then install (and activate) WooCommerce.
+
+Step 2. Upload Cardsave Module files
+------------------------------------
+Upload the woocommerce-gateway-cardsave folder and its contents to the wp-content\plugins folder of your WordPress installation.
+
+Step 3. Login and Configure
+---------------------------
+a) Login to your WordPress admin area.
+b) on the left navigation, click "Plugins".
+c) click the "Activate" link under the "WooCommerce CardSave Redirect Gateway".
+d) on the left navigation, select "WooCommerce" > "Settings".
+e) Click the "Payment Gateways" tab.
+f) Click the "CardSave" tab.
+d) Click the tick alongside the "Cardsave Redirect" option, and click the "Update" button under the list of gateways.
+e) on the right hand column, using the "Payment Gateway" drop down menu, select "Cardsave Redirect". Enter the following information into the boxes provided.
+
+Title: This is name displayed alongside the payment option on the checkout page.
+Description: This is shown in the box under the module, once it has been selected.
+Merchant ID: As provided in the production/test merchant gateway emails.
+Merchant Password: As set when first logging into the MMS.
+Pre-shared Key: As shown under the Merchant Information section of the MMS.
+"Pre-Auth" Payment Only: Tick this only if you require "Pre-Auth" only transactions to process - this will NOT collect the payment.
+Accept American Express: Tick this only if you have an American Express MID associated with your CardSave gateway account.
+Mandatory Fields: Tick the fields you wish to be shown as mandatory on the gateway page (we recommend all fields are marked as mandatory).
+
+Click the "Save changes" button when you have finished.
+
+Step 4. Testing
+---------------
+You should now be able to select the CardSave payment method on the payment method selection page of the checkout. 
+
+If you are using a test gateway account, you will be able to use the test cards & addresses in the "CardSave Test Gateway Test Cards" included with this module.
+
+NOTE: You need to use the card billing address as specified in the PDF file alongside each card - If you use the incorrect billing address, as default, the payment will fail (AVS/Postcode Check will fail).

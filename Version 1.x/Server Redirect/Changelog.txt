@@ -1,0 +1,6 @@
+Date		By				File			Change		
+12/10/2011	Alistair Richardson (CardSave)				Module packaged for initial release
+13/10/2011	Alistair Richardson (CardSave)	gateway-cardsave.php	Add additional success/failed messages to thankyou page & add customer visable success/failed notes to order.
+17/10/2011	Alistair Richardson (CardSave)	gateway-cardsave.php	Changed "View Order" links on success/failed page
+19/10/2012	Alistair Richardson (CardSave)	gateway-cardsave.php	Now stores CV2, AVS, 3DS results alongside transactions
+21/02/2013	Mark Godley (CardSave)		gateway-cardsave.php	Strip slashes from returned post variables

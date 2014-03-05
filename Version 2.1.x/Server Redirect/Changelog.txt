@@ -1,0 +1,4 @@
+Date		Version		By								File					Change		
+14/03/2013				Alistair Richardson (CardSave)	All						Packaged for initial release
+30/10/2013	2.0			Mark Godley (CardSave)			gateway-cardsave.php	Fixed deprecated error on = &new (issue when using php 5.3+ and error reporting to strict).
+14/02/2014	2.1			Mark Godley (CardSave)			gateway-cardsave.php	Compatibility fix for WooCommerce 2.1

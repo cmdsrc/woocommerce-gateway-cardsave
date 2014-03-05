@@ -1,0 +1,70 @@
+WooCommerce Cardsave Re-Directed Payment Module
+Copyright (C) 2013 All rights reserved.
+Support: ecomm@cardsave.net
+
+------------------------
+
+Last Updated: 14/02/2014
+
+------------------------
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+Disclaimer: This code is provided on an "as is" basis. It is the responsibility of the merchant/merchants web developer to test its implementation and function.
+
+Installation Notes
+==================
+This module is for WooCommerce Version 2.1.x only. It will NOT work with earlier versions of WooCommerce. WooCommerce 2.1+ requires Wordpress 3.8 - please ensure you are using this version.
+
+This module was built on version 2.1.1, we cannot guarantee it will work on version 2.1.0. There are also various bugs in WooCommerce 2.1.0, as a result we recommend that you use WooCommerce 2.1.1 or above. 
+
+Installation Instructions for Re-Directed Payments
+==================================================
+Step 1. Pre-Installation
+------------------------
+If you have not already done so, install WordPress, then install (and activate) WooCommerce.
+
+If you have an earlier version of this plugin installed, you must remove it before continuing.
+
+To remove the plugin, login to your WordPress Admin:
+a) Click Plugins > Installed plugins on the left navigation.
+b) Click the "Deactivate" link below the "WooCommerce CardSave Redirect Gateway" option
+c) Click the check box next to "WooCommerce CardSave Redirect Gateway"
+d) Using the "Bulk Actions" drop down at the top of the page, select "Delete" and click the "Apply" button.
+
+We also advise you check the files have been correctly deleted via FTP before proceeding.
+
+Step 2. Upload Cardsave Module files
+------------------------------------
+Upload the woocommerce-gateway-cardsave folder and its contents to the wp-content\plugins folder of your WordPress installation.
+
+Step 3. Login and Configure
+---------------------------
+a) Login to your WordPress admin area.
+b) On the left navigation, click "Plugins".
+c) Click the "Activate" link under the "WooCommerce CardSave Redirect Gateway".
+d) On the left navigation, select "WooCommerce" > "Settings".
+e) Click the "Checkout" tab.
+f) Click the "CardSave" link at the top of the page (under the menu bar).
+d) Enter the following information into the boxes provided.
+
+Title: This is name displayed alongside the payment option on the checkout page.
+Description: This is shown in the box under the payment option, once it has been selected.
+Merchant ID: As provided in the production/test merchant gateway emails.
+Merchant Password: As set when first logging into the MMS.
+Pre-shared Key: As shown under the Merchant Information section of the MMS.
+"Pre-Auth" Payment Only: Tick this only if you require "Pre-Auth" only transactions to process - this will NOT collect the payment.
+Accept American Express: Tick this only if you have an American Express MID associated with your CardSave gateway account.
+Mandatory Fields: Tick the fields you wish to be shown as mandatory on the gateway page (we recommend all fields are marked as mandatory).
+
+Click the "Save changes" button when you have finished.
+
+Step 4. Testing
+---------------
+You should now be able to select the CardSave payment method on the payment method selection page of the checkout. 
+
+If you are using a test gateway account, you will be able to use the test cards & addresses in the "CardSave Test Gateway Test Cards" included with this module.
+
+NOTE: You need to use the card billing address as specified in the PDF file alongside each card - If you use the incorrect billing address, as default, the payment will fail (AVS/Postcode Check will fail).
